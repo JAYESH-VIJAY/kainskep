@@ -1,0 +1,429 @@
+.navigation {
+    // height: 100px;
+    // height: 48px;
+    height: 65px;
+    width: 100%;
+    margin: 0px;
+    background: #fff;
+    color: #707070;
+    // padding-top: 16px;
+    // overflow: hidden;
+}
+
+.navigation .logo {
+    // position: absolute;
+    padding-left: 20px;
+    // float: left;
+    left: 0px;
+    width: 30%;
+    z-index: 10;
+}
+.navigation .logo1{
+    display: block;
+}
+.navigation .logo2{
+    display: none;
+}
+
+.navigation .logo img {
+    position: relative;
+    // height: 68px;
+    height: 48px;
+    margin-left: 10%;
+}
+
+.nav-container {
+    // max-width: 1000px;
+    // margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    // float: right;
+    // width: 100%;
+    // width: 100%;
+    // margin-left: auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    // margin-right: 30px;
+  
+}
+nav ul li::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #0bb4e5;
+}
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    // padding: 0 20px;
+    padding: 0 17px;
+    line-height: 50px;
+    padding-top: 10px;
+    background: #fff;
+    color: #707070;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav ul .link > a:hover,.link3>a:hover,
+nav ul .link > a:visited:hover ,.link3>a:visited:hover{
+    color: #0bb4e5;
+    // border-bottom: 2px solid #0bb4e5;
+    padding-bottom: 0px;
+    width: 100%;
+}
+nav ul .link{
+    position: relative;
+}
+nav ul .link::after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:0%;
+    height: 2px;
+    background-color: #0bb4e5;
+    // transition: all 0.4s linear;
+}
+// nav ul .link:hover::after{
+//     width: 90%;
+// }
+
+
+nav ul .link.active,
+nav ul .link3.active {
+    // color: #0bb4e5;
+    // border-bottom: 2px solid #0bb4e5;
+    padding-bottom: 0px;
+}
+
+nav ul .link.active::after,nav ul .link3.active::after{
+width: 90%;
+}
+
+nav ul .link2 > a:hover,
+nav ul .link2 > a:visited:hover {
+    color: #0bb4e5 !important;
+    border-bottom: 0px solid #0bb4e5;
+}
+
+.link3 > a:hover,
+.link3 > a:visited:hover {
+    color: #0bb4e5 !important;
+    // border-bottom: 0px solid #0bb4e5;
+}
+
+nav ul .link2 a {
+    font-size: 16px;
+}
+
+// nav ul li a:not(:only-child):after,
+// nav ul li a:visited:not(:only-child):after {
+//     padding-left: 4px;
+//     content: " ▾";
+// }
+
+// nav ul li a:not(:only-child):after,
+// nav ul li a:visited:not(:only-child):after {
+//     padding-left: 4px;
+//     content: " ▾";
+// }
+
+@keyframes toggle-menu {
+    from {transform: translateY(10px);}
+    to {transform: translateY(0);}
+}
+
+nav ul li ul {
+    transform-origin: 50% 0%;
+    animation: 0.1s toggle-menu;
+}
+
+nav ul li ul li {
+    min-width: 100%;
+}
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    width: 200px;
+}
+
+.nav-dropdown li a{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.297);
+    font-size: 1.3rem !important;
+}
+.nav-dropdown li a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.297) !important;
+}
+.home-main-container .nav-dropdown li a{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.365);
+}
+.home-main-container .nav-dropdown li a:hover{
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.365) !important;
+}
+nav .contact_btn {
+    width: 20%;
+    margin: auto 5%;
+    //right: 0px;
+    //float: right;
+}
+
+nav .contact_btn button {
+    position: relative;
+    width: 100%;
+    padding: 8% 10%;
+    margin-left: 10%;
+    background-color: #0bb4e5;
+    border-radius: 28px;
+    color: white;
+    border: none;
+    font-size: 13px;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0bb4e5;
+    height: 70px;
+    width: 70px;
+}
+
+nav .contact_btn button:hover{
+    background-color: transparent;
+    border:2px solid #0bb4e5;
+    color:#0bb4e5;
+}
+
+@media (max-width:1020px){
+    nav ul li{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation {
+        height: 70px;
+        padding-top: 0px;
+    }
+
+    .navigation .logo {
+        margin-top: 10px;
+        width: 30%;
+    }
+
+    .navigation .logo img {
+        position: relative;
+        height: 50px;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        float: none;
+        margin-right: 0px;
+        z-index: 999;
+    }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+        box-shadow: 1px 3px 6px #00000029;
+    }
+    nav ul li ul li a {
+        padding-left: 30px;
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+
+    nav ul .link > a:hover,.link3>a:hover,
+    nav ul .link > a:visited:hover,.link3>a:visited:hover {
+        color: #0bb4e5;
+        border-bottom: 0px solid #0bb4e5;
+        padding-bottom: 15px;
+    }
+
+    nav ul .link2 > a:hover,
+    nav ul .link2 > a:visited:hover {
+        color: #0bb4e5;
+        border-bottom: 0px solid #0bb4e5;
+    }
+
+    nav .contact_btn button {
+        margin-left: 0%;
+        font-size: 11px;
+        width: 40%;
+        padding: 3% 7%;
+        margin: 10px 0%;
+    }
+
+   
+
+
+    nav .contact_btn {
+        width: 100%;
+        margin: auto;
+        right: 0px;
+    }
+    .navigation .logo1{
+        display: none;
+    }
+    .navigation .logo2{
+        display: block;
+    }
+    .stickyheader .navigation .logo1{
+        display: block;
+    
+    }
+    .stickyheader .navigation .logo2{
+        display: none;
+    }
+    .nav-container{
+        display: block;
+    }
+    .nav-container .logo{
+        position: absolute;
+        float: left;
+    }
+    nav ul .link.active::after,nav ul .link3.active::after{
+        width: 0%;
+        display: none;
+        }
+        .nav-dropdown{
+            display: none !important;
+        }
+}
+@media screen and (min-width: 901px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+    top: -10px;
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+// @media (min-width:900px) and (max-width:1135px) {
+//     .nav-container nav{
+//         margin-left: -26px;
+//         margin-left: -45px;
+//     }
+// }
+
+.stickyheader .navigation .nav-list li a{
+    background-color: #005067;
+    color: white;
+}
+
+.stickyheader .navigation{
+    position: fixed;
+    left: 0;
+        top: 0;
+        right: 0;
+        transition: all 0.00001ms linear;
+        z-index: 999;
+        background: #005067;
+}
+
+
+// 
+// .navigation{
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     transition: all 0.5s;
+//     z-index: 999;
+//     background: 005067;
+//     background: #005067 !important;
+//     padding-top: 0px;
+//     height: 62px;
+// }
+// .navigation .logo img {
+//     height: 48px;
+// }
+// li a{
+//     background: #005067;
+//     color: white;
+// }
+
+
+
+
+
+
+
+
+
+
+
+// 

@@ -1,0 +1,211 @@
+
+// ----------common-css for section-----------------------
+.am-comx-heading{
+    margin: 6rem 0;
+}
+
+.all-clrwhite h3,.all-clrwhite p,.all-clrwhite h2,.all-clrwhite ul li{
+    color: white;
+}
+
+// -------common-css for blackbackgroundimag and text design-------
+
+
+$bg-img: url('../../../../public/images/AllService/app7.png');
+$bg-img2: url('../../../../public/images/AllService/app9.png');
+.all-ss-ims{
+    position: relative;
+    // width: 100%;
+}
+.all-ss-imsx{
+height: 357px;
+
+// backdrop-filter: blur(4px);
+width: 100%;
+filter:blur(2px);
+background-repeat: no-repeat;
+}
+.all-ss-imsy{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    color: white;
+    text-align: center;
+}
+.all-ss-imsy>p{
+    color: white;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+    font-family: 700;
+    // letter-spacing: 2px;
+    // text-align: justify;
+    font-size: 2rem;
+}
+
+
+// ----------second-------------
+.am-second-x{
+    background: linear-gradient(rgba(0, 43, 59, 0.5),rgba(0, 43, 59, 0.5)),$bg-img;
+}
+// -----------third-----------
+.am-third .am-third-x{
+    text-align: center;
+}
+.amcard,.am2card{
+    background-color: #002B3B;
+    height: 150px;
+    width: 70%;
+    display: flex;
+    // justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    // margin: auto;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+.amcard>div:first-child>img{
+    // background-color: red;
+    width: 90%;
+    height: 100%;
+}
+.amcard>div:last-child>h3{
+    color: white;
+    font-size: 1.6rem;
+    width: 90%;
+    // margin: auto;
+    margin-left: auto;
+}
+.amcard-y{
+    border: 1px solid white;
+    border-radius: 47px;
+    padding: 10px;
+}
+// -------four--------
+.am-four .image{
+    text-align: center;
+}
+.am-four .image img{
+   width: 250px;
+   height: auto;
+}
+.am-four .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.am-four .text p{
+    font-weight: 500;
+}
+// -----------five-------------
+.am-five-x{
+    background: linear-gradient(rgba(0, 43, 59, 0.5),rgba(0, 43, 59, 0.5)),$bg-img2;
+    background-repeat: no-repeat;
+    height: 294px;
+}
+.am-five-y{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 30%;
+}
+.am-five-y h2{
+    color: white;
+    width: 100%;
+
+}
+.am-five-y p{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-transform: unset;
+    width: 50%;
+    margin: 1.8rem auto;
+}
+// ---------------6-----------
+.am-sixx p{
+    text-transform: unset;
+    width: 60%;
+}
+.am2card{
+    justify-content: center;
+    height: 200px;
+
+}
+.am2card>div{
+    width: 90%;
+}
+.am2card>div h3,.am2card>div p{
+    color: white;
+}
+.am2card>div h3{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+
+}
+
+.am2card>div p{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+// -----------responsive-----------
+@media (max-width:992px){
+    .amcard,.am2card{
+        width: 100%;
+    }
+
+    .xs-gap>div{
+        margin: 1rem 0;
+        }
+}
+
+@media (max-width:768px){
+    .am-first{
+        max-width: calc(100% - 20px) !important;
+    }
+    .am2card > div,
+    .am-five-y p,
+    .all-ss-imsy > p
+    {
+        width:  calc(100% - 30px);
+
+    }
+    .am-four .image img {
+        width: 200px;
+    }
+    .amcard,.am2card{
+        width: 80%;
+        margin: auto;
+    }
+    .am-sixx p{
+       width: calc(100% - 30px);
+    }
+}
+@media (max-width:576px){
+    .amcard,.am2card{
+      width: 100%;
+      margin: 0 unset;
+    }
+    .am-four .image img {
+        width: 160px;
+    }
+    .am2card,
+    .amcard{
+        // width: 100%;
+        width: 90%;
+        margin: auto;
+        // border-radius: 0;
+    }
+   
+}
+@media (min-width:576px) and (max-width:768px){
+    .am2card{
+        width: 100%;
+    }
+    .am2card>div{
+        width: 100%;
+    }
+}

@@ -1,0 +1,145 @@
+.cx-section{
+    margin: 4rem 0;
+}
+.cx-section .head{
+    // text-align: center;
+    text-align: left;
+    // margin: 10px 0;
+    padding-top: 10px;
+    // margin-bottom: 25px;
+    padding-bottom: 25px;
+
+} 
+.cx-section .head h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.underlinex{
+background-color:#002B3B;
+width: 12%;
+height: 3px;
+color: #002B3B;
+display: inline-block;
+text-align: left;
+}
+
+
+// -----------left-----------
+.contact-section .left .input-bx{
+    margin: 1rem 0;
+}
+.contact-section .left .input-bx input,
+.contact-section .left .input-bx textarea{
+ height: 24px;
+//  width: 100%;
+ background-color: white;
+//  padding: ;
+display: block;
+width: 100%;
+padding: 18px 16px;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+-webkit-appearance: none;
+appearance: none;
+border: 2px solid #002B3C;
+border-radius: 4px;
+// transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.contact-section .left .input-bx input:hover{
+    box-shadow: none;
+    outline: none;
+}
+.contact-section .left .input-bx input::placeholder,
+.contact-section .left .input-bx textarea{
+    color:#7B7B7B;
+}
+.contact-section .left .input-bx textarea{
+    height: 109px;
+    resize: none;
+}
+.contact-section .left .input-bx-button{
+    background-color: #002B3B;
+    color: white;
+    margin-top: 0px;
+    border-color: #002B3B;
+}
+// -------------right--------------
+.contact-section .right>div{
+       width: 70%;
+    margin-left: auto;
+    padding-left: 33px;
+}
+
+.contact-section .right  .contactx a{
+    color:#002B3B;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.contact-section .right  .contactx>span{
+    display: block;
+}
+.contact-section .right  .contactx .line{
+    color:#DADADA;
+    background-color: #DADADA;
+    height: 4px;
+}
+.contact-section .right  .contacty{
+    margin-top: 25px;
+}
+.contact-section .right  .contacty .head{
+    text-align: left;
+}
+
+.contact-section .right  .contacty h2{
+    margin-bottom: 2px;
+    text-align: left;
+}
+// -----------,map----------
+.contact-page .map{
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 40px;
+}
+.contact-page .map .map-head{
+    // margin:60px 0;
+    padding: 60px 0;
+
+}
+.contact-page .map .map-head>h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.input-bx .erx-ct{
+    color: red;
+}
+// --------media-query---------
+@media (max-width:992px){
+    .contact-section {
+        max-width: fit-content !important;
+        margin: 2rem 2.2rem !important;
+    }
+    .contact-section .right > div {
+    width: 100%;
+    }
+}
+@media (max-width:767px){
+    .contact-section .right{
+        display: none;
+    }
+    .cx-section .head{
+        text-align: center;
+    }
+    .contact-section .btx{
+        text-align: center;
+    }
+    .map iframe{
+        width: 100%;
+    }
+}

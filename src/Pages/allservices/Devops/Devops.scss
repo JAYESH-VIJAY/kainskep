@@ -1,0 +1,131 @@
+
+
+// ------first-section-----
+// .dp-section1 p{
+// width: 90%;
+// margin: auto;
+// text-transform: unset;
+// }
+// ----------second-section-------
+.dp-section2 .third{
+margin: 4rem 0;
+}
+.dp-section2 .second>img{
+width: 100%;
+// height: 300px;
+height: auto;
+}
+.dp-section2 .third .dpcards{
+    height: 200px;
+    // display: block;
+}
+.dp-section2 .third .dpcards p,.dp-section2 .third .dpcards ul li{
+    font-size: 1.2rem;
+    text-transform: unset;
+}
+.dp-section2 .third .dpcards ul li{
+    margin: 1rem 0;
+}
+.dp-section2 .four{
+    margin: 4rem auto;
+}
+.dp-section2 .four p{
+    // width: 80%;
+    // margin: auto;
+    text-align: center;
+}
+
+// ---------four-section---------
+.dp-section4{
+    display: block;
+    // height: 80vh;
+    // height: 650px;
+    height: auto;
+    // padding: 40px 60px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.dp-section4 .image img{
+    // height: 100px;
+    // width: 300px;
+    width: 400px;
+    height: auto;
+}
+.dp-section4  .fxx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dp-section4  .fxx h3{
+    font-size: 1.4rem;
+    text-transform: unset;
+}
+.dp-section4 .fxx ul{
+    width: 100%;
+}
+.dp-section4  .fxx p,.dp-section4 .fxx ul li,
+.dp-section5 .second .right p,
+.dp-section5 .second .left ul li
+{
+    font-size: 1.2rem;
+    text-transform: unset;
+    font-weight: normal;
+}
+// -------five-section----------
+.dp-section5 .head,.dp-section6 .head{
+    margin: 3rem 0;
+}
+.dp-section5 .second .left{
+    display: flex;
+    justify-content: center;
+    // justify-content: flex-end;
+    align-items: center;
+    border-right: 4px solid #0BB4E5;
+}
+.dp-section5 .second .right p,
+.dp-section5 .second .left ul li{
+    // font-weight: 600;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.dp-section5 .second .left ul li{
+    line-height: 2rem;
+   
+}
+// .dp-section5 .second .right p{
+//     width: 90%;
+//     margin: auto;
+// }
+// -----six-section---
+// .dp-section6 p{
+//     font-size: 1.2rem;
+//     text-align: center;
+//     margin: auto;
+//     width: 90%;
+// }
+// -------responsive---------
+@media (max-width:992px){
+    .dp-section4 .image img{
+        width: 100%;
+        height: auto;
+    }
+  
+}
+@media (max-width:768px){
+    .dp-section2 .third .dpcards{
+     width: 100%;
+    }
+}
+@media (max-width:576px){
+    .dp-section2 .third .dpcards{
+       margin: 1rem 0;
+       }
+}
+@media (max-width:400px){
+    .dp-section4{
+        height: 445px;
+        overflow-y: hidden;
+    }
+}

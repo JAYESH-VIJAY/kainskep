@@ -1,0 +1,238 @@
+// #fafafa
+// #f6f4f4
+
+// ----hightlight-section------------
+.casestudydetails-heroimage .herobx{
+    filter:none;
+}
+.underline-effect-color::after{
+    background-color: #d9177f;
+    width: 5%;
+}
+.csd-text{
+    font-size: 2.7rem !important;
+    margin: 2rem 0;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+}
+.highlights-section{
+    margin: 2rem 0;
+}
+.highlights-section .shadow-cards{
+    display: flex;
+    justify-content:center;
+    gap: 2.5rem;
+}
+
+.highlights-section .shcards{
+    position: relative;
+    width: 250px;
+    margin: 3% 1%;
+    height: 165px;
+    position: relative;
+    }
+    
+    .highlights-section .shcards .blue-box{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        background: #01408c;
+        // background-color: #005067;
+        border-radius: 5px;
+        z-index: 7;
+    }
+    .highlights-section .shcards .content-box{
+        z-index: 9;
+        margin-top: 7%;
+        box-sizing: border-box;
+        padding: 25px;
+        width: 93%;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 5px 12px 0px #ccc;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .highlights-section .shcards .content-box .text{
+        color: #05438d;
+        font-size: 1.6rem;
+    }
+    .highlights-section .shcards .content-box::after{
+        content:"";
+        position: absolute;
+        top: 30%;
+        left: 0;
+        height: 60px;
+        background-color: #d9177f;
+        width: 2px;
+    }
+
+    .csd-section{
+        background-color:  #f1f4f6;
+        padding: 4rem;
+    
+    }
+    .csd-section p{
+        color: #05438d;
+    }
+.sp-objectives{
+    justify-content: center;
+      padding-top: 5rem;
+    row-gap: 100px;
+    padding: 5rem 4rem;
+}
+
+.objectives-sx>div{
+    height: 140px;
+    background-color: #f1f4f6;
+    padding: 30px 20px;
+    // border-top: 2px solid #dddbdb;
+    border-top: 2px solid rgb(217,23,127);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    position: relative;
+}
+.objectives-sx p{
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+.objectives-sx .logo{
+    position: absolute;
+    top: -58px;
+
+}
+.solution .sn-cards{
+    // display: flex;
+    // width: 48%;
+    // margin: 1% 1%;
+    background-color: #f1f4f6;
+    // padding: 5px;
+    padding: 2rem 2rem;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.solution .text{
+    font-size: 1.5rem;
+}
+.solution .s-row{
+    gap: 2rem;
+    margin: auto;
+    margin: 4rem auto;
+    justify-content: center;
+}
+.commn-logocards .logo{
+    background-color: #01408c;
+    text-align: center;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+.casedetails-page{
+    background-color:#f6f4f4 ;
+}
+.casedetails-container{
+background: #fff;
+    border: 1px solid #e1e1e1;
+ 
+}
+.casedetails-content{
+    padding:4rem 2rem;
+}
+.casedetails-heading{
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+}
+.casedetails-headingx{
+    font-size: 2rem;
+    margin: 0.8rem 0;
+    font-weight: 600 !important;
+}
+.casedetails-para{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.value-deliver-section{
+    height: 45rem;
+    padding: 4rem 3.5rem;
+}
+.value-deliver-section .vds{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    }
+    .value-deliver-section .first h3{
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .value-deliver-cards{
+        background-color: white;
+        padding: 30px 15px;
+        line-height: 27px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+// ----------container-box-----------
+
+
+// .container-box{
+//     width: 23%;
+// }
+
+
+// .p-card{
+//     padding: 30px 15px;
+//     height: 200px;
+// }
+// .p-card .p-card-body{
+//     padding: 0px;
+// }
+.about-client-sp{
+    background-color: #f1f4f6;
+    padding: 20px 30px;
+    // margin: 0 auto;
+    border-radius: 7px;
+    // margin: -82px auto 0px auto;
+    position: relative;
+    top: -50px;
+    width: 90%;
+    margin: auto;
+}
+.about-client-sp .logo-text p{
+    background-color: white;
+    display: inline-block;
+    padding: 3px 4px;
+    border-left: 2px solid #d9177f;
+}
+.about-client-sp .text{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}

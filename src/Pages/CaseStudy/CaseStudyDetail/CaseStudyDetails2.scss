@@ -1,0 +1,74 @@
+.casestudydetails-heroimage .herobx {
+    /* filter: none; */
+    /* fill: #00161D; */
+    /* filter: brightness(0.5); */
+    background: rgba(0, 22, 29, 0.65);
+}
+
+.csdsection1 .underline-effect::after {
+    /* margin: unset; */
+    /* margin-top: 3px; */
+    /* width: 10%; */
+    margin: auto;
+    margin-top: 3px;
+    width: 8%;
+}
+.csdsection1 h3{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+
+.csdsection img{
+    // width: 300px;
+    width: 100%;
+    height: 200px;
+    // height: auto;
+}
+.csdsection .text p{
+    text-transform:unset;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+//    line-height: 25px;
+    }
+
+    // 
+    .p-accordion .p-accordion-header .p-accordion-header-link{
+        background-color: #0DB5E6 !important;
+        border: transparent;
+    }
+    .p-accordion .p-accordion-content {
+     background-color: #CBCBCB;
+    }
+    
+
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon{
+    display: none;
+}
+.solution .image img{
+    height: 300px;
+}
+.benfits-section{
+    height: 340px;
+    background-color: #005067;
+    padding: 1rem 8rem;
+}
+.benfits-section .head{
+    // margin:1rem 0
+    margin-top: 2rem;
+}
+.benfits-section .text{
+    margin-top: 4rem;
+    font-size: 1.4rem;
+}
+
+.benfits-section .text .text-inside{
+    padding: 0 6rem;
+}
+.benfits-section .text-outer p{
+ font-size: 1.4rem;
+ text-align: center;
+ width: 90%;
+ margin: auto;
+}

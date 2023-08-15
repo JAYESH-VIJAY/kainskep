@@ -1,0 +1,204 @@
+.blog-page-container{
+    // margin-top: 10px;
+    // padding-top: 3px;
+    background:"#f6f4f4"
+  }
+  // ---------blog-cards-----------
+  .blog-cards{
+    // height: 364.062px;
+    height: auto;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 6%);
+    text-align: center;
+    padding: 26px 20px;
+    cursor: pointer;
+    z-index: 20;
+    margin: 0px !important;
+  }
+  .blog-cards:hover{
+    transform: scale(1.03);
+    transition: ease-in-out;
+    transition-duration:0.5s;
+  }
+  .blog-cards:hover .blog-cards-head{
+    color: #0bb4e5 !important;
+  }
+  .blog-cards h5{
+    // font-size: 12.5px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+  .blog-cards h5>a{
+    
+    color: #0bb4e5;
+  }
+  .blog-cards h4{
+    font-size: 1.4rem;
+    text-align: left;
+    width: 100%;
+    margin-top: .9rem;
+    margin-bottom: .8rem;
+  }
+  .blog-cards p{
+    font-size: 1.2rem;
+    color: #595959;
+    text-align: justify;
+    margin: 0.8rem 0px;
+  
+  }
+  .blog-cards div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  // ---------blog-dropdown-------------
+  
+  .blog-page .blog-navigation .br-black{
+    border: 1px solid #e1e0e0;
+    margin: 8px 0;
+    background-color: white;
+    height: 72px;
+    position: relative;
+    display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  
+  .dropdown_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    margin-left: 1.4rem;
+    display: flex;
+    font-size: 1.6rem;
+  }
+
+  // .blg-srch{
+  //   display: block !important;
+  //   padding: 0 !important;
+  // }
+  // .blg-srch .blog-search-box{
+  //   width: 100%;
+  //   height: 100%;
+
+  // }
+  // .blg-srch .blog-search-box .p-inputtext{
+  //   width: 100%;
+  //   height: 100%;
+  //   font-size: 1.6rem;
+  //   color: black;
+  //   border: transparent;
+  // }
+  // .blog-search-box .p-inputtext::placeholder{
+  //   color: black;
+  // }
+  // .blg-srch .blog-search-box .p-inputtext:focus{
+  //   border: transparent;
+  //   box-shadow: none;
+  //   outline: none;
+
+  // }
+
+
+  .dropdown_menu h3{
+    font-weight: 500 !important;
+  }
+  .dropdown_menu h3{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    line-height: 16px;
+    font-family: "Poppins", sans-serif !important;
+    display: inline;
+    margin-bottom: 0px !important;
+  }
+  
+  .dropdown_menu .dropdown_list{
+    list-style: none;
+      background: white;
+      border-right: 1px solid #e1e0e0;
+      position: absolute;
+      top: 74px;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  .dropdown_menu .d_none{
+    height: 0px;
+  }
+  .dropdown_menu .d_block{
+    height: 136px;
+    border-bottom: 2px solid #0bb4e5;
+  }
+  .dropdown_menu .icon_translate{
+    transform: rotate(180deg);
+    transition: all 0.1s linear;
+  }
+  .dropdown_menu svg{
+    stroke: #0bb4e5;
+  }
+  
+  .dropdown_menu .icon_translate2{
+    transition: all 0.1s linear;
+  }
+  .dropdown_list .dropdown_list_items{
+  width: 100%;
+  font-size: 1.6rem;
+  margin: 8px 0px;
+  }
+  .dropdown_list .dropdown_list_items:hover{
+    color: #0bb4e5;
+  }
+  // ----paginator-----------
+  .p-paginator{
+    width: 40%;
+    margin: auto;
+    background: transparent;
+  }
+  
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    // background: #EEF2FF;
+    // border-color: #EEF2FF;
+   color: white;
+   background-color: #0bb4e5;
+   border-color: #002b3c;
+}
+.paginator .p-paginator .p-dropdown{
+  display: none;
+}
+
+
+  // ----------------media-query------------
+  @media (max-width:815px){
+    .blog-cards h4{
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+  .dropdown_menu .d_block {
+    height: 122px;
+  }
+  }
+  
+  @media (max-width:576px){
+  .dropdown_menu .d_block {
+    height: 106px;
+  }
+  }
+
+@media (max-width:998px){
+  .commx-navigation{
+    padding: 1.5rem 3%;
+  }
+}
+
+@media (max-width:768px){
+  .p-paginator{
+  width: 100%;
+  }
+}

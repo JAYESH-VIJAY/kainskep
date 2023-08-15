@@ -1,0 +1,126 @@
+
+
+// ------second-section-----------
+// .dsecond-section .left
+.dsecond-section .left p{
+    width: 80%;
+    text-align: justify;
+    // font-weight: bold;
+    font-weight: 500;
+}
+// ----------third-section-----------
+.dthird-section .first h2{
+    width:60%;
+    // margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: capitalize;
+ 
+}
+.dthird-section .image{
+    text-align: center;
+}
+.dthird-section .image img{
+    width: 70%;
+    height: 300px;
+}
+// ----------d4section--------------
+.d4section p{
+    text-align: center;
+    width: 55%;
+}
+// -----------d5section----------
+.d5section .number{
+    color:#565656;
+    text-transform: capitalize;
+    font-size: 6rem;
+}
+.d5section h3{
+    margin: 2rem 0;
+}
+.d5section p{
+    font-size: 1.4rem;
+}
+.d5section .underline-effect::after{
+    margin:unset;
+    margin-top: 3px;
+    width: 10%;
+}
+// ----d6section------
+.d6section p{
+    width: 70%;
+    text-align: center;
+
+}
+// -------d7-section-------
+.d7section-imgx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    flex-direction: column;
+}
+.d7section-imgx>div{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #005067;
+    border-radius: 16px;
+    padding: 15px 25px;
+    // height: 100px;
+    // width: 150px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+// .d7section-imgx>div:hover{
+//     // box-shadow: 0 0 10px grey;
+//     // -webkit-transform: scale(1.05);
+// }
+// .d7section-imgx>div:hover .d7section-img{
+//     transform: scale(1.05);
+
+// }
+.d7section-imgx p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.d7section-img{
+    width: 60px;
+    height: 40px;
+
+}
+// ---------d8-section---------
+.d8section p{
+    width: 80%;
+    text-align: center;
+    }
+
+    // -----------responsive-ness-------------
+   
+    @media (max-width:767px){
+ .dthird-section .image img{
+        width: 100%;
+        height: auto;
+    }
+    .numberical-section{
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .d5section .underline-effect::after{
+        margin: auto;
+        margin-top:1px;
+    }
+    .d5section h3{
+        margin: 1rem 0;
+    }
+    .dthird-section .first h2 {
+    width: 100%;
+    }
+   .d4section p,.numberical-section p,.d6section p,.d8section p{
+    width: calc(100% - 30px);
+    margin: auto;
+    text-align: center !important;
+   }
+    }
+
